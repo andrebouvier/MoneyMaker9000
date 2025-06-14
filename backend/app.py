@@ -1,0 +1,69 @@
+from flask import Flask, jsonify
+from flask_cors import CORS
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+from dotenv import load_dotenv
+import os
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+# Load environment variables
+load_dotenv()
+
+# Initialize Flask app
+app = Flask(__name__)
+CORS(app, resources={
+    r"/api/*": {
+        "origins": ["http://localhost:3000"],  # React development server
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
+
+# Configure database
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///trading_bot.db')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# Initialize extensions
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+
+# Import models after db initialization
+from models.user import User
+
+# Import routes after app initialization to avoid circular imports
+from routes import trading_routes, auth_routes
+
+# Register blueprints
+app.register_blueprint(trading_routes.bp)
+app.register_blueprint(auth_routes.bp)
+
+# Test endpoint
+@app.route('/api/test', methods=['GET'])
+def test_endpoint():
+    logger.debug("Test endpoint called")
+    response = {
+        'status': 'success',
+        'message': 'Backend is working!',
+        'database_connected': bool(db.engine)
+    }
+    logger.debug(f"Sending response: {response}")
+    return jsonify(response)
+
+# Root endpoint
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({
+        'message': 'Welcome to the API',
+        'endpoints': {
+            'test': '/api/test',
+            'auth': '/api/auth',
+            'trading': '/api/trading'
+        }
+    })
+
+if __name__ == '__main__':
+    app.run(debug=True) 

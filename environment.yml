@@ -1,0 +1,27 @@
+name: ENGR697
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - pip:
+    - ib_insync==0.9.86
+    - flask==2.3.3
+    - flask-sqlalchemy==3.1.1
+    - python-dotenv==1.0.0
+    - plotly==5.18.0
+    - dash==2.14.1
+    - dash-bootstrap-components==1.5.0
+    - gunicorn==21.2.0
+    - flask-cors==4.0.0
+    - flask-migrate==4.0.5
+    - pytest==7.4.2
+    - black==23.7.0
+    - flake8==6.1.0 
