@@ -1,10 +1,14 @@
+{/*
+  This file to used for metadata, if wanting to change the home page, change the Welcome component.
+*/}
+
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "MoneyMaker 9000" },
+    { name: "description", content: "Engineering 697 Project for SFSU" },
   ];
 }
 
