@@ -1,3 +1,7 @@
+{/*
+  This is the Landing page for the app. Changes to this file will change the homepage.
+*/}
+
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 

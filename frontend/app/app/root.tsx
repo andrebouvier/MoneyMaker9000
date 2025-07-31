@@ -1,3 +1,8 @@
+{/*
+  This is the root layout for the app. Only change if you need to change something on every page of the website.
+  It is also used to load the global styles and fonts.
+*/}
+
 import {
   isRouteErrorResponse,
   Links,
