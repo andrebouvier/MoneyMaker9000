@@ -2,7 +2,7 @@
   This file to used for metadata, if wanting to change the home page, change the Welcome component.
 */}
 
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/app";
 import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
@@ -12,6 +12,8 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <Welcome />;
+export default function app() {
+  return (
+  <Welcome />
+  );
 }
