@@ -1,15 +1,83 @@
+/*
+  Main CSS file for the app and changing tailwind config, if you want to change the theme, or certain styles do it here
+
+  **When adding any new components to the homepage, make sure it is styled for both light and dark, add ease so it won't instantly change**
+*/
+
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /* Light Theme */
+    --color-primary: #3B82F6;
+    --color-primary-dark: #1D4ED8;
+    --color-background: #FFFFFF;
+    --color-surface: #F8FAFC;
+    --color-text: #1E293B;
+    --color-text-secondary: #64748B;
+    --color-border: #E2E8F0;
+    
+    /* Dark Theme */
+    --color-primary-dark-theme: #3B82F6;
+    --color-primary-dark-dark-theme: #1D4ED8;
+    --color-background-dark-theme: #0A0F1B;
+    --color-surface-dark-theme: #1E293B;
+    --color-text-dark-theme: #F8FAFC;
+    --color-text-secondary-dark-theme: #CBD5E1;
+    --color-border-dark-theme: #334155;
+
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light) {
+    background-color: var(--color-background-dark-theme);
+    color: var(--color-text-dark-theme);
   }
+
+}
+
+.bg-background {
+  background-color: var(--color-background);
+  transition: background-color 0.3s ease;
+}
+
+.dark .bg-background {
+  background-color: var(--color-background-dark-theme);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+  transition: background-color 0.3s ease;
+}
+
+.dark .bg-surface {
+  background-color: var(--color-surface-dark-theme);
+}
+
+.text-text {
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.dark .text-text {
+  color: var(--color-text-dark-theme);
+}
+
+.text-text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.dark .text-text-secondary {
+  color: var(--color-text-secondary-dark-theme);
 }
