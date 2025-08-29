@@ -5,9 +5,7 @@ export function WIPplaceholder() {
                 {/* Logo/Icon Placeholder */}
                 <div className="mb-8">
                     <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto flex items-center justify-center mb-4">
-                        <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
+                        <img src="/public/MoneyMakerLogo.png" className="h-22" alt="Options Trading Bot Logo" />
                     </div>
                 </div>
 
