@@ -1,21 +1,13 @@
 export function WIPplaceholder() {
-  return (
-    <div className="flex flex-col items-center justify-center bg-background py-20 md:py-32 px-4 min-h-screen">
-      <div className="text-center max-w-2xl mx-auto">
-
-        {/* Testing */}
-        <div className="mb-8">
-          <div className="w-24 h-24 bg-primary rounded-full mx-auto flex items-center justify-center mb-4">
-            color primary
-          </div>
-
-          <div className="w-24 h-24 bg-primary-dark rounded-full mx-auto flex items-center justify-center mb-4">
-            color primary dark
-          </div>
-
-          <div className="w-24 h-24 bg-surface rounded-full mx-auto flex items-center justify-center mb-4">
-            color surface
-          </div>
+    return (
+        <div className="flex flex-col items-center justify-center bg-background py-20 md:py-32 px-4 min-h-screen">
+            <div className="text-center max-w-2xl mx-auto">
+                {/* Logo/Icon Placeholder */}
+                <div className="mb-8">
+                    <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto flex items-center justify-center mb-4">
+                        <img src="/public/MoneyMakerLogo.png" className="h-22" alt="Options Trading Bot Logo" />
+                    </div>
+                </div>
 
 
         </div>
