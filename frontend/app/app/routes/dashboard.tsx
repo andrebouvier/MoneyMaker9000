@@ -26,13 +26,13 @@ export function meta({ }: Route.MetaArgs) {
 // Helper function for mock data
 const generateMockData = () => {
   const data = [];
-  let startValue = 1000;
+  let startValue = 10000;
 
   for (let i = 0; i < 30; i++) {
     const date = new Date();
     date.setDate(date.getDate() - (29 - i));
     const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: "numeric" });
-    const value = startValue + Math.floor(Math.random() * 200) - 100;
+    const value = startValue + Math.floor(Math.random() * 2000) - 1000;
 
     data.push({
       date: formattedDate,
@@ -61,27 +61,56 @@ export default function dashboard() {
   }, []);
 
   return (
-    <div>
+    <div className="h-screen bg-gray-100">
       <Navbar />
-      <div className="flex flex-col md:flex-row items-stretch md:items-start justify-center p-4 md:space-x-8 max-w-7xl mx-auto">
 
-        {/* Account Balance Box */}
-        <div className="bg-white rounded-xl shadow-md p-6 w-full md:w-1/3 mb-4 md:mb-0">
-          <div className="mb-6 text-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-              Account Balance
-            </h1>
-            <p className="text-gray-500 text-sm">
-              As of today's date
-            </p>
+      <div className="flex flex-col md:flex-row items-stretch md:items-start justify-center p-4 pt-25 md:space-x-5 max-w-7xl mx-auto">
+        <div className="flex flex-col w-full md:w-1/3">
+          {/* Account Balance Box */}
+          <div className="bg-white rounded-xl shadow-md p-6 mb-4">
+            <div className="mb-6 text-center">
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                Total Portfolio Value
+              </h1>
+            </div>
+            <div className="text-center">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">
+                ${balance.toLocaleString()}
+              </h2>
+              <p className="mt-2 text-green-500 font-semibold flex justify-center items-center">
+                +5.2% since last month
+              </p>
+            </div>
           </div>
-          <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">
-              ${balance.toLocaleString()}
-            </h2>
-            <p className="mt-2 text-green-500 font-semibold flex justify-center items-center">
-              +5.2% since last month
-            </p>
+
+          {/* Available Balance Box */}
+          <div className="bg-white rounded-xl shadow-md p-6 mb-4">
+            <div className="mb-6 text-center">
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                Available Balance
+              </h1>
+            </div>
+            <div className="text-center">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">
+                ${(Math.random() * 5000).toFixed(2)}
+              </h2>
+            </div>
+          </div>
+
+          {/* Active Positions Box */}
+          <div className="bg-white rounded-xl shadow-md p-6">
+            <div className="mb-6 text-center">
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                Active Positions
+              </h1>
+            </div>
+            <div className="text-center">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">
+                {(Math.floor(Math.random() * 25) + 1).toLocaleString()}
+              </h2>
+              <p className="mt-2 text-green-500 font-semibold flex justify-center items-center">
+              </p>
+            </div>
           </div>
         </div>
 
@@ -90,9 +119,9 @@ export default function dashboard() {
           <div className="mb-6 flex justify-between items-center">
 
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 ">
-              Welcome to the Dashboard
+              Portfolio Overview
             </h1>
-            <p className="text-gray-500 ">
+            <p className="text-gray-500">
               Visual Sample
             </p>
           </div>
