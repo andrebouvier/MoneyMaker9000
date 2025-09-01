@@ -1,29 +1,47 @@
 export function WIPplaceholder() {
-    return (
-        <div className="flex flex-col items-center justify-center bg-background py-20 md:py-32 px-4 min-h-screen">
-            <div className="text-center max-w-2xl mx-auto">
-                {/* Logo/Icon Placeholder */}
-                <div className="mb-8">
-                    <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto flex items-center justify-center mb-4">
-                        <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                </div>
+  return (
+    <div className="flex flex-col items-center justify-center bg-background py-20 md:py-32 px-4 min-h-screen">
+      <div className="text-center max-w-2xl mx-auto">
 
-                {/* Main Heading */}
-                <h1 className="text-4xl md:text-6xl font-bold text-text mb-6">
-                    MoneyMaker9000
-                </h1>
+        {/* Testing */}
+        <div className="mb-8">
+          <div className="w-24 h-24 bg-primary rounded-full mx-auto flex items-center justify-center mb-4">
+            color primary
+          </div>
 
-                {/* Coming Soon Badge */}
-                <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold text-lg">
-                    <svg className="w-5 h-5 mr-2 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Stay Tuned for updates
-                </div>
-            </div>
+          <div className="w-24 h-24 bg-primary-dark rounded-full mx-auto flex items-center justify-center mb-4">
+            color primary dark
+          </div>
+
+          <div className="w-24 h-24 bg-surface rounded-full mx-auto flex items-center justify-center mb-4">
+            color surface
+          </div>
+
+
         </div>
-    );
+
+        {/* Logo/Icon Placeholder */}
+        <div className="mb-8">
+          <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto flex items-center justify-center mb-4">
+            <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+        </div>
+
+        {/* Main Heading */}
+        <h1 className="text-4xl md:text-6xl font-bold text-text mb-6">
+          MoneyMaker9000
+        </h1>
+
+        {/* Coming Soon Badge */}
+        <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold text-lg">
+          <svg className="w-5 h-5 mr-2 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Stay Tuned for updates
+        </div>
+      </div>
+    </div>
+  );
 }

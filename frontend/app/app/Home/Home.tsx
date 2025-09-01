@@ -13,9 +13,9 @@ export function Home() {
     <main className="box-border">
       <ThemeToggle />
       <WIPplaceholder />
-      {/* <Hero />
+      <Hero />
       <HowItWorks />
-      <Footer /> */}
+      <Footer />
 
     </main>
   );
