@@ -3,28 +3,28 @@
 
   **When adding any new components to the homepage, make sure it is styled for both light and dark, add ease so it won't instantly change**
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     /* Light Theme */
-    --color-primary: #3B82F6;
-    --color-primary-dark: #1D4ED8;
-    --color-background: #FFFFFF;
-    --color-background-secondary: #F8FAFC;
-    --color-surface: #F8FAFC;
-    --color-text: #1E293B;
+    --color-primary: #9BD39B;
+    --color-primary-dark: #89BA6F;
+    --color-background: #FFFFF3;
+    --color-background-secondary: #DBDBC3;
+    --color-surface: #DCA1A1;
+    --color-text: #011009;
     --color-text-secondary: #64748B;
-    --color-border: #E2E8F0;
+    --color-border: #05472A;
     
     /* Dark Theme */
-    --color-primary-dark-theme: #3B82F6;
+    --color-primary-dark-theme: #063D25;
     --color-primary-dark-dark-theme: #1D4ED8;
-    --color-background-dark-theme: #0A0F1B;
-    --color-background-secondary-dark-theme: #212936;
+    --color-background-dark-theme: #011009;
+    --color-background-secondary-dark-theme: #043721;
     --color-surface-dark-theme: #1E293B;
     --color-text-dark-theme: #F8FAFC;
     --color-text-secondary-dark-theme: #CBD5E1;
@@ -33,6 +33,7 @@
 }
 
 html,
+
 body {
   font-family: var(--font-sans);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -87,8 +88,28 @@ body {
 
 .text-text-secondary {
   color: var(--color-text-secondary);
+  transition: background-color 0.3s ease;
 }
 
 .dark .text-text-secondary {
   color: var(--color-text-secondary-dark-theme);
+}
+
+.primary {
+  background-color: var(--color-primary);
+  transition: background-color 0.3s ease;
+
+}
+
+.dark .primary {
+  background-color: var(--color-primary-dark-theme);
+}
+
+.primary-dark {
+  background-color: var(--color-primary-dark);
+  transition: background-color 0.3s ease;
+}
+
+.dark .primary-dark {
+  background-color: var(--color-primary-dark-dark-theme);
 }

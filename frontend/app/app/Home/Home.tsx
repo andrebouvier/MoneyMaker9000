@@ -14,9 +14,9 @@ export function Home() {
     <main className="box-border">
       <Navbar />
       <WIPplaceholder />
-      {/* <Hero />
+      <Hero />
       <HowItWorks />
-      <Footer /> */}
+      <Footer />
 
     </main>
   );
