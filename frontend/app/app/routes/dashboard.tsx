@@ -61,61 +61,59 @@ export default function dashboard() {
   }, []);
 
   return (
-    <div className="h-screen bg-gray-100">
+    <div className="h-screen bg-background">
       <Navbar />
 
       <div className="flex flex-col md:flex-row items-stretch md:items-start justify-center p-4 pt-25 md:space-x-5 max-w-7xl mx-auto">
         <div className="flex flex-col w-full md:w-1/3">
           {/* Account Balance Box */}
-          <div className="bg-white rounded-xl shadow-md p-6 mb-4">
+          <div className="bg-primary rounded-xl shadow-md p-6 mb-4">
             <div className="mb-6 text-center">
-              <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+              <h1 className="text-2xl md:text-3xl font-bold text-text mb-2">
                 Total Portfolio Value
               </h1>
             </div>
             <div className="text-center">
-              <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-text-secondary">
                 ${balance.toLocaleString()}
               </h2>
-              <p className="mt-2 text-green-500 font-semibold flex justify-center items-center">
+              <p className="mt-2 text-text font-semibold flex justify-center items-center">
                 +5.2% since last month
               </p>
             </div>
           </div>
 
           {/* Available Balance Box */}
-          <div className="bg-white rounded-xl shadow-md p-6 mb-4">
+          <div className="bg-primary-dark rounded-xl shadow-md p-6 mb-4">
             <div className="mb-6 text-center">
               <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
                 Available Balance
               </h1>
             </div>
             <div className="text-center">
-              <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-text-secondary">
                 ${(Math.random() * 5000).toFixed(2)}
               </h2>
             </div>
           </div>
 
           {/* Active Positions Box */}
-          <div className="bg-white rounded-xl shadow-md p-6">
+          <div className="bg-primary-dark rounded-xl shadow-md p-6">
             <div className="mb-6 text-center">
               <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
                 Active Positions
               </h1>
             </div>
             <div className="text-center">
-              <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-text-secondary">
                 {(Math.floor(Math.random() * 25) + 1).toLocaleString()}
               </h2>
-              <p className="mt-2 text-green-500 font-semibold flex justify-center items-center">
-              </p>
             </div>
           </div>
         </div>
 
         {/* Main Graph Box */}
-        <div className="bg-white rounded-xl shadow-md p-6 w-full md:w-2/3">
+        <div className="bg-primary rounded-xl shadow-md p-6 w-full md:w-2/3">
           <div className="mb-6 flex justify-between items-center">
 
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 ">
@@ -134,7 +132,7 @@ export default function dashboard() {
                 <XAxis dataKey="date" />
                 <YAxis />
                 <Tooltip />
-                <Line type="monotone" dataKey="balance" stroke="#2563EB" strokeWidth={2} dot={false} />
+                <Line type="monotone" dataKey="balance" stroke="#000000" strokeWidth={2} dot={false} />
               </LineChart>
             </ResponsiveContainer>
           </div>
@@ -142,14 +140,14 @@ export default function dashboard() {
           {/* Refresh button */}
           <div className="mt-8 flex justify-center">
             <button
-              // onclick={() => setData()}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300 transform hover:scale-105"
+              onclick={() => setData()}
+              className="bg-surface hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300 transform hover:scale-105"
             >
               Refresh Data
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

@@ -16,7 +16,7 @@
     --color-background: #FFFFF3;
     --color-background-secondary: #DBDBC3;
     --color-surface: #DCA1A1;
-    --color-text: #1E293B;
+    --color-text: #011009;
     --color-text-secondary: #64748B;
     --color-border: #05472A;
     
@@ -88,24 +88,28 @@ body {
 
 .text-text-secondary {
   color: var(--color-text-secondary);
+  transition: background-color 0.3s ease;
 }
 
 .dark .text-text-secondary {
   color: var(--color-text-secondary-dark-theme);
 }
 
-.color-primary {
-  color: var(--color-primary)
+.primary {
+  background-color: var(--color-primary);
+  transition: background-color 0.3s ease;
+
 }
 
-.dark .color-primary {
-  color: var(--color-primary-dark-theme)
+.dark .primary {
+  background-color: var(--color-primary-dark-theme);
 }
 
-.color-primary-dark {
-  color: var(--color-primary-dark)
+.primary-dark {
+  background-color: var(--color-primary-dark);
+  transition: background-color 0.3s ease;
 }
 
-.dark .color-primary-dark {
-  color: var(--color-primary-dark-dark-theme)
+.dark .primary-dark {
+  background-color: var(--color-primary-dark-dark-theme);
 }
