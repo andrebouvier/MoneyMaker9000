@@ -17,7 +17,7 @@
     --color-background-secondary: #DBDBC3;
     --color-surface: #DCA1A1;
     --color-text: #011009;
-    --color-text-secondary: #64748B;
+    --color-text-secondary: #011009;
     --color-border: #05472A;
     
     /* Dark Theme */
@@ -27,7 +27,7 @@
     --color-background-secondary-dark-theme: #043721;
     --color-surface-dark-theme: #1E293B;
     --color-text-dark-theme: #F8FAFC;
-    --color-text-secondary-dark-theme: #CBD5E1;
+    --color-text-secondary-dark-theme: #011009;
     --color-border-dark-theme: #334155;
 
 }
