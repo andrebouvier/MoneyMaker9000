@@ -1,8 +1,10 @@
 {/*
   Navbar for the Homepage
 */}
-
+import { Link, useNavigate } from "react-router";
 import { ThemeToggle } from "./ThemeToggle";
+import { auth, googleProvider } from "../lib/firebase";
+import { signInWithPopup } from "firebase/auth";
 
 {/*  Navbar items that are mapped to the navbar */}
 const navItems = [
@@ -14,6 +16,18 @@ const navItems = [
 ]
 
 export default function Navbar() {
+  const navigate = useNavigate();
+
+  async function handleSignIn() {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      if (result.user) {
+        navigate("/dashboard");
+    }} catch (error) {
+      console.error("Google sign in failed:", error);
+    }
+  }
+  
   return (
     <nav className="bg-background border-b border-border fixed w-full z-20 top-0 start-0 transition-all duration-300 ease-in-out">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
@@ -44,11 +58,13 @@ export default function Navbar() {
           {/* Right side - Get Started button and mobile menu */}
           <div className="flex items-center space-x-3">
             <ThemeToggle />
-            <button type="button" className="text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:ring-primary/30 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none transition-all duration-300 ease-in-out">
+            <button onClick={handleSignIn} type="button" className="cursor-pointer text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:ring-primary/30 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none transition-all duration-300 ease-in-out">
               Login
             </button>
-            <button type="button" className="text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:ring-primary/30 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none transition-all duration-300 ease-in-out">
-                Register
+            <button  type="button" className="text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:ring-primary/30 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none transition-all duration-300 ease-in-out">
+                <Link to="/dashboard">
+                Dev
+                </Link>
             </button>
             <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text-secondary rounded-lg md:hidden hover:bg-surface focus:outline-none focus:ring-2 focus:ring-border transition-all duration-300 ease-in-out">
               <span className="sr-only">Open main menu</span>
