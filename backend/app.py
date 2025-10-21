@@ -59,6 +59,7 @@ def test_endpoint():
     return jsonify(response)
 
 
+
 # Root endpoint
 @app.route("/", methods=["GET"])
 def root():
@@ -68,7 +69,18 @@ def root():
             "endpoints": {
                 "test": "/api/test",
                 "auth": "/api/auth",
-                "trading": "/api/trading",
+                "trading": {
+                    "connect": "/api/trading/connect",
+                    "market_data": "/api/trading/market-data/<symbol>",
+                    "predict": "/api/trading/predict",
+                    "portfolio": {
+                        "positions": "/api/trading/portfolio/positions",
+                        "account": "/api/trading/portfolio/account", 
+                        "performance": "/api/trading/portfolio/performance",
+                        "history": "/api/trading/portfolio/history",
+                        "dashboard": "/api/trading/portfolio/dashboard"
+                    }
+                },
             },
         }
     )
