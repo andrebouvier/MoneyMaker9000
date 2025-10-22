@@ -27,7 +27,7 @@
     --color-background-secondary-dark-theme: #043721;
     --color-surface-dark-theme: #1E293B;
     --color-text-dark-theme: #F8FAFC;
-    --color-text-secondary-dark-theme: #011009;
+    --color-text-secondary-dark-theme: #F8FAFC;
     --color-border-dark-theme: #334155;
 
 }
@@ -112,4 +112,58 @@ body {
 
 .dark .primary-dark {
   background-color: var(--color-primary-dark-dark-theme);
+}
+
+/* Fade transition styles for page switching */
+.transitioning {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.page-fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.page-fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-fade-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced transition for navbar items */
+.nav-item-transition {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item-transition::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item-transition:hover::after,
+.nav-item-transition.active::after {
+  width: 100%;
 }

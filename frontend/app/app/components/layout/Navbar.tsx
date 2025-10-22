@@ -13,6 +13,7 @@ const navItems = [
     {name: "Performance/Results", href: "#Performance"},
     {name: "FAQ", href: "#FAQ"},
     {name: "Contact Us", href: "#Contact Us"},
+    {name: "Technologies", href: "#Technologies"}
 ]
 
 export default function Navbar() {
