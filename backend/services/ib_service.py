@@ -1,68 +1,99 @@
-from ib_insync import *
-import pandas as pd
-from datetime import datetime, timedelta
+import asyncio
 import os
+from asyncio.tasks import run_coroutine_threadsafe
+from threading import Thread
+
 from dotenv import load_dotenv
+from ib_async import IB, Stock
 
 load_dotenv()
 
+background_loop = None
 
-class IBService:
-    def __init__(self):
-        self.ib = IB()
-        self.connected = False
+ib = IB()
 
-    def connect(self):
-        try:
-            if not self.connected:
-                self.ib.connect(
-                    host=os.getenv("IB_HOST", "127.0.0.1"),
-                    port=int(os.getenv("IB_PORT", 4002)),
-                    clientId=int(os.getenv("IB_CLIENT_ID", 1)),
-                )
-                self.connected = True
-            return True
-        except Exception as e:
-            print(f"Connection error: {str(e)}")
-            return False
 
-    def disconnect(self):
-        if self.connected:
-            self.ib.disconnect()
-            self.connected = False
+def _run_loop(loop):
+    asyncio.set_event_loop(loop)
+    loop.run_forever()
 
-    def get_market_data(self, symbol):
-        if not self.connected:
-            self.connect()
 
-        contract = Stock(symbol, "SMART", "USD")
-        self.ib.qualifyContracts(contract)
+def startup_ib_connection():
+    global background_loop
+    if background_loop is None:
+        background_loop = asyncio.new_event_loop()
+        t = Thread(target=_run_loop, args=(background_loop,), daemon=True)
+        t.start()
 
-        # Request historical data
-        bars = self.ib.reqHistoricalData(
-            contract,
-            endDateTime="",
-            durationStr="5 D",
-            barSizeSetting="15 mins",
-            whatToShow="TRADES",
-            useRTH=True,
-        )
+    future = asyncio.run_coroutine_threadsafe(
+        ib.connectAsync(
+            host=os.getenv("IB_HOST"),
+            port=int(os.getenv("IB_PORT")),
+            clientId=int(os.getenv("IB_CLIENT_ID")),
+            timeout=10,
+        ),
+        background_loop,
+    )
 
-        # Convert to pandas DataFrame
-        df = util.df(bars)
-        return df.to_dict(orient="records")
+    try:
+        future.result(timeout=10)
+    except Exception as e:
+        print(f"--- Failed to connect to IBKR during startup. Error: {e} ---")
 
-    def place_order(self, symbol, action, quantity, order_type="MKT"):
-        if not self.connected:
-            self.connect()
 
-        contract = Stock(symbol, "SMART", "USD")
-        self.ib.qualifyContracts(contract)
+def disconnect_from_ib():
+    if ib.isConnected():
+        ib.disconnect()
 
-        if order_type == "MKT":
-            order = MarketOrder(action, quantity)
-        else:
-            raise ValueError(f"Order type {order_type} not supported")
+    if background_loop and background_loop.is_running():
+        background_loop.call_soon_threadsafe(background_loop.stop)
 
-        trade = self.ib.placeOrder(contract, order)
-        return trade.order.orderId
+
+# # Helper function
+# async def _fetch_historic_market_data(symbol:
+#     contract = Stock(symbol.upper(), "SMART", "USD")
+#     await ib.qualifyContractsAsync(contract)
+
+#     bars = await ib.reqHistoricalDataAsync(
+#         contract,
+#         endDateTime="",
+#         durationStr="30 D",
+#         barSizeSetting="1 hour",
+#         whatToShow="TRADES",
+#         useRTH=True,
+#     )
+
+#     print("--- Finished fetching data from IBKR ---")
+#     processed_bars = []
+#     for bar in bars:
+#         processed_bars.appened({
+#             "Date": str(bar.date),
+#             "Open": bar.open,
+#             "High": bar.high,
+#             "Low": bar.low,
+#             "Close": bar.close,
+#             "Volume": bar.volume,
+#             "barCount": bar.barCount,
+#         })
+
+#     return processed_bars
+
+# # This will call an async function
+# @bp.route("/async-data/<string:symbol>", methods=("GET", "POST"))
+# def get_historic_market_data(symbol):
+#     if not background_loop:
+#         return jsonify({"error": "IB event loop is not running"})
+
+#         future = asyncio.run_coroutine_threadsafe(_fetch_historic_market_data(symbol), background_loop)
+
+#         try:
+#             processed_data = future.result(timeout=30)
+#             return jsonify({"data": processed_data})
+
+#         except asyncio.TimeoutError:
+#             print("--- Task Timeouted Out ---")
+#             return jsonify({"error": "Request to IBKR timed out."})
+
+#         except Exception as e:
+#             print(f"--- An error occured in the IBKR task: {s} ---")
+#             return jsonify({"error": f"An error occured: {str(e)}"})
