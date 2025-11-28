@@ -21,14 +21,14 @@
     --color-border: #05472A;
     
     /* Dark Theme */
-    --color-primary-dark-theme: #063D25;
-    --color-primary-dark-dark-theme: #1D4ED8;
-    --color-background-dark-theme: #011009;
-    --color-background-secondary-dark-theme: #043721;
-    --color-surface-dark-theme: #1E293B;
-    --color-text-dark-theme: #F8FAFC;
-    --color-text-secondary-dark-theme: #F8FAFC;
-    --color-border-dark-theme: #334155;
+    --color-primary-dark-theme: #2E8B57;
+    --color-primary-dark-dark-theme: #3CB371;
+    --color-background-dark-theme: #121212;
+    --color-background-secondary-dark-theme: #1A1A1A;
+    --color-surface-dark-theme: #1F1F1F;
+    --color-text-dark-theme: #F5F5F5;
+    --color-text-secondary-dark-theme: #A0A0A0;
+    --color-border-dark-theme: #226B42;
 
 }
 
@@ -75,6 +75,15 @@ body {
 
 .dark .bg-surface {
   background-color: var(--color-surface-dark-theme);
+}
+
+.text-primary {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.dark .text-primary {
+  color: var(--color-primary-dark-theme);
 }
 
 .text-text {
@@ -166,4 +175,9 @@ html {
 .nav-item-transition:hover::after,
 .nav-item-transition.active::after {
   width: 100%;
+}
+
+/* Container to ensure ui is not overlapped by navbar */
+.main-content-container {
+  padding-top: 75px
 }
