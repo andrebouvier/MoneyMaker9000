@@ -1,27 +1,79 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-interface PortfolioValueBoxProps {
-  availableBalance: number;
-}
+const PortfolioValueBox: React.FC = () => {
+  const [netLiquidation, setNetLiquidation] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
-const PortfolioValueBox: React.FC<PortfolioValueBoxProps> = ({ availableBalance }) => {
-  return (
-    <div className="bg-primary-dark rounded-xl shadow-md p-6 mb-4">
-      <div className="mb-6 text-center">
-        <h1 className="text-2xl md:text-3xl font-bold text-text-secondary mb-2">
-          Total Portfolio Value
-        </h1>
+  useEffect(() => {
+    const fetchAccountSummary = async () => {
+      try {
+        const response = await fetch('/api/trading/account-summary');
+        if (!response.ok) {
+          throw new Error('HTTP error! Status: ${response.status}');
+        }
+        const data = await response.json();
+
+        if (data && data.NetLiquidation && data.NetLiquidation.length > 0) {
+          setNetLiquidation(parseFloat(data.NetLiquidation[0]).toLocaleString());
+        } else {
+          setError("NetLiquidation data not found.");
+        }
+      } catch (e: any) {
+        setError(`Failed to fetch portfolio value: ${e.message}`);
+        console.error("Error fetching account summary.", e);
+      }
+    };
+
+    fetchAccountSummary();
+  }, []);
+
+  const getFontSizeClasses = (text: string | null): string => {
+    if (!text) {
+      return 'text-4xl md:text-5xl';
+    }
+    const len = text.length;
+    if (len > 12) {
+      return 'text-3xl md:text-4xl';
+    }
+    if (len > 9) {
+      return 'text-4xl md:text-4xl';
+    }
+    return 'text-4xl md:text-5xl';
+  };
+
+  if (error) {
+    return (
+      <div className='bg-surface rounded-xl shadow-md p-4 text-center mb-4'>
+        <h1 className='text-xl font-bold text-red-500'>Error</h1>
+        <p className='text-text-secondary'>{error}</p>
       </div>
-      <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-text-secondary">
-          ${availableBalance.toLocaleString()}
+    );
+  }
+
+  if (netLiquidation === null) {
+    return (
+      <div className='bg-surface rounded-xl shadow-md p-4 text-center mb-4'>
+        <h1 className='text-xl font-bold text-text'>Loading...</h1>
+      </div>
+    );
+  }
+
+  return (
+    <div className='bg-surface rounded-xl shadow-md p-4 text-center mb-4'>
+      <h1 className='text-xl font-bold text-text flex justify-center items-center h-6'>
+        <span className="group-hover:hidden">PV</span>
+        <span className="hidden group-hover:block">Total Portfolio Value</span>
+      </h1>
+      <div className='hidden group-hover:block'>
+        <h2 className='${getFontSizeClasses(netLiquidation)} font-extrabold text-primary'>
+          ${netLiquidation}
         </h2>
-        <p className="mt-2 text-text-secondary font-semibold flex justify-center items-center">
-          +5.2% since last month
+        <p className='mt-2 text-text-secondary font-semibold flex justify-center items-center'>
+          +5.2% since last month (TEST VALUES)
         </p>
       </div>
     </div>
   )
-};
+}
 
 export default PortfolioValueBox;

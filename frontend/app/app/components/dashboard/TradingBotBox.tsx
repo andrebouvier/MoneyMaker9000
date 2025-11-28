@@ -6,19 +6,22 @@ const TradingBotBox: React.FC = () => {
   };
 
   return (
-    <div className='bg-primary-dark rounded-xl shadow-md p-6 mt-5'>
-      <div className='mb-6 text-center'>
-        <h1 className='text-2xl md:text-3xl font-bold text-text-secondary'>
+    <div className='bg-surface rounded-xl shadow-md p-4 text-center mt-5'>
+      {/* Collapsed State */}
+      <h1 className='text-xl font-bold text-text group-hover:hidden flex justify-center items-center'>
+        TB
+      </h1>
+      {/* Expanded State */}
+      <div className='hidden group-hover:block'>
+        <h1 className='text-xl font-bold text-text mb-2'>
           Trading Bot
         </h1>
-      </div>
-      <div className='text-center'>
         <p className='text-text-secondary mb-4'>
           Create and manage your automated trading bots.
         </p>
         <button
           onClick={handleCreateBot}
-          className='bg-accent hover:bg-primary-dark text-white font-bold py-2 px-4 rounded'>
+          className='bg-primary hover:bg-primary-dark text-text font-bold py-2 px-4 rounded'>
           Create New Tradding Bot
         </button>
       </div>
