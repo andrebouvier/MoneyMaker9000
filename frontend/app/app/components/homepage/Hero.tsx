@@ -6,7 +6,7 @@ import react from "react";
 
 export function Hero() {
   return (
-    <div className="flex flex-col md:flex-row items-stretch gap-8 md:gap-16 px-4 md:px-8 pt-8 md:pt-16 min-h-[80vh] relative bg-background">
+    <div id="About" className="flex flex-col md:flex-row items-stretch gap-8 md:gap-16 px-4 md:px-8 pt-8 md:pt-16 min-h-[80vh] relative bg-background">
       {/* Left Column - Text Content (60% width) */}
       <div className="flex flex-col justify-center bg-background px-6 md:px-12 xl:pl-20 py-12 md:py-24 w-full md:w-[60%]">
         <h1 className="text-text text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-wider mb-8 leading-tight">

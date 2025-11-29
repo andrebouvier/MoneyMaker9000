@@ -6,7 +6,7 @@ export function HowItWorks() {
 
 
     return (
-        <section id="HowItWorks" className="bg-background-secondary py-20 md:py-32 px-4">
+        <section id="HowItWorks" className="bg-background-secondary py-20 md:py-32 px-4 border-t border-border">
             <div className="max-w-6xl mx-auto flex flex-col items-center">
                 <h2 className="text-text text-center text-4xl md:text-5xl font-bold">How It Works</h2>
                 <p className="text-text-secondary text-center mt-4 max-w-3xl">

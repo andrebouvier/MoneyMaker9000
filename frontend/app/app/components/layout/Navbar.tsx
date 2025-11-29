@@ -5,14 +5,15 @@ import { Link, useNavigate } from "react-router";
 import { ThemeToggle } from "./ThemeToggle";
 import { auth, googleProvider } from "../lib/firebase";
 import { signInWithPopup } from "firebase/auth";
+import { useEffect } from "react";
 
 {/*  Navbar items that are mapped to the navbar */ }
 const navItems = [
   { name: "About", href: "#About" },
-  { name: "Features", href: "#Features" },
+  { name: "How It Works", href: "#HowItWorks" },
   { name: "Performance/Results", href: "#Performance" },
   { name: "FAQ", href: "#FAQ" },
-  { name: "Contact Us", href: "#Contact Us" },
+  { name: "Contact Us", href: "#ContactUs" },
   { name: "Technologies", href: "#Technologies" }
 ]
 
@@ -29,6 +30,100 @@ export default function Navbar() {
       console.error("Google sign in failed:", error);
     }
   }
+
+  // Handle initial scroll when page loads with a hash
+  useEffect(() => {
+    const handleInitialScroll = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const targetId = hash.substring(1);
+        
+        // Special handling for Technologies
+        if (targetId === 'Technologies') {
+          return; // Handled by Home.tsx
+        }
+
+        setTimeout(() => {
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            const navbar = document.querySelector('nav');
+            const navbarHeight = navbar ? navbar.offsetHeight : 0;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+            window.scrollTo({
+              top: Math.max(0, offsetPosition),
+              behavior: 'smooth'
+            });
+          }
+        }, 100);
+      }
+    };
+
+    // Handle initial hash
+    handleInitialScroll();
+
+    // Also listen for hash changes from browser navigation
+    window.addEventListener('hashchange', handleInitialScroll);
+    
+    return () => {
+      window.removeEventListener('hashchange', handleInitialScroll);
+    };
+  }, []);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Check if it's a hash link (starts with #)
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = href.substring(1); // Remove the # symbol
+      
+      // Special handling for Technologies (it uses different logic in Home.tsx)
+      if (targetId === 'Technologies') {
+        window.location.hash = '#Technologies';
+        // Scroll to top since Technologies is a separate view
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      // Find the target element
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        // Get navbar height to offset scroll position
+        const navbar = document.querySelector('nav');
+        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+        
+        // Calculate scroll position accounting for navbar
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20; // Extra 20px padding
+
+        // Smooth scroll to the element
+        window.scrollTo({
+          top: Math.max(0, offsetPosition),
+          behavior: 'smooth'
+        });
+
+        // Update URL hash
+        window.history.pushState(null, '', href);
+      } else {
+        // If element not found immediately, wait a bit for dynamic content
+        setTimeout(() => {
+          const retryElement = document.getElementById(targetId);
+          if (retryElement) {
+            const navbar = document.querySelector('nav');
+            const navbarHeight = navbar ? navbar.offsetHeight : 0;
+            const elementPosition = retryElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+            window.scrollTo({
+              top: Math.max(0, offsetPosition),
+              behavior: 'smooth'
+            });
+            window.history.pushState(null, '', href);
+          }
+        }, 100);
+      }
+    }
+    // If it's not a hash link, let the default behavior handle it
+  };
 
   return (
     <nav className="bg-background border-b border-border fixed w-full z-20 top-0 start-0 transition-all duration-300 ease-in-out">
@@ -47,7 +142,8 @@ export default function Navbar() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-text hover:text-primary px-3 py-2 text-sm font-medium transition-all duration-300 ease-in-out"
+                    onClick={(e) => handleNavClick(e, item.href)}
+                    className="text-text hover:text-primary px-3 py-2 text-sm font-medium transition-all duration-300 ease-in-out cursor-pointer"
                   >
                     {item.name}
                   </a>
@@ -84,7 +180,8 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-text hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ease-in-out"
+              onClick={(e) => handleNavClick(e, item.href)}
+              className="text-text hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ease-in-out cursor-pointer"
             >
               {item.name}
             </a>
