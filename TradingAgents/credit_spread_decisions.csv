@@ -1,0 +1,1032 @@
+2025-11-25T18:55:00.470084,SPY,2025-05-28,BUY,bull_put_credit_spread,430.0,425.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T18:59:21.407050,SPY,2025-05-29,BUY,bull_put_credit_spread,563.0,558.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 563.0,
+  ""long_strike"": 558.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T19:03:42.670200,SPY,2025-05-30,BUY,bull_put_credit_spread,585,580,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 585,
+  ""long_strike"": 580,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-25T19:08:41.923877,SPY,2025-06-02,BUY,bull_put_credit_spread,436.0,431.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 436.0,
+  ""long_strike"": 431.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T19:13:14.588679,SPY,2025-06-03,BUY,bull_put_credit_spread,670,665,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 670,
+  ""long_strike"": 665,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-25T19:17:09.837426,SPY,2025-06-04,SELL,bear_call_credit_spread,434.0,439.0,5.0,75,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 434.0,
+  ""long_strike"": 439.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T19:21:00.342476,SPY,2025-06-05,BUY,bull_put_credit_spread,439,434,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 439,
+  ""long_strike"": 434,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-25T19:24:33.907195,SPY,2025-06-06,HOLD,none,,,,85,"{
+  ""direction"": ""HOLD"",
+  ""spread_type"": ""none"",
+  ""short_strike"": null,
+  ""long_strike"": null,
+  ""width"": null,
+  ""confidence"": 85
+}"
+2025-11-25T19:28:29.439817,SPY,2025-06-09,BUY,bull_put_credit_spread,430.0,425.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T19:32:53.557184,SPY,2025-06-10,BUY,bull_put_credit_spread,396,391,5,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 396,
+  ""long_strike"": 391,
+  ""width"": 5,
+  ""confidence"": 80
+}"
+2025-11-25T19:36:46.037325,SPY,2025-06-11,BUY,bull_put_credit_spread,565.0,560.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 565.0,
+  ""long_strike"": 560.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T19:41:22.079131,SPY,2025-06-12,BUY,bull_put_credit_spread,434.0,429.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 434.00,
+  ""long_strike"": 429.00,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T19:45:50.685873,SPY,2025-06-13,SELL,bear_call_credit_spread,410.0,415.0,5.0,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 410.0,
+  ""long_strike"": 415.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T19:49:45.743263,SPY,2025-06-16,BUY,bull_put_credit_spread,433.0,428.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 433.0,
+  ""long_strike"": 428.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T19:53:15.457091,SPY,2025-06-17,SELL,bear_call_credit_spread,675.0,670.0,5.0,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 675.0,
+  ""long_strike"": 670.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T19:57:28.001758,SPY,2025-06-18,BUY,bull_put_credit_spread,436.0,431.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 436.0,
+  ""long_strike"": 431.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T20:00:42.600860,SPY,2025-06-19,BUY,bull_put_credit_spread,430,425,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T20:05:27.320911,SPY,2025-06-20,SELL,bear_call_credit_spread,430.0,435.0,5.0,75,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 435.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T20:09:44.533948,SPY,2025-06-23,HOLD,none,,,,85,"{
+  ""direction"": ""HOLD"",
+  ""spread_type"": ""none"",
+  ""short_strike"": null,
+  ""long_strike"": null,
+  ""width"": null,
+  ""confidence"": 85
+}"
+2025-11-25T20:14:26.992289,SPY,2025-06-24,BUY,bull_put_credit_spread,431.0,426.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 431.0,
+  ""long_strike"": 426.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T20:18:31.201894,SPY,2025-06-25,BUY,bull_put_credit_spread,425.0,420.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 425.0,
+  ""long_strike"": 420.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T20:22:53.562962,SPY,2025-06-26,BUY,bull_put_credit_spread,440.0,435.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 440.0,
+  ""long_strike"": 435.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T20:26:55.238831,SPY,2025-06-27,SELL,bear_call_credit_spread,460,465,5,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 460,
+  ""long_strike"": 465,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T20:31:10.966652,SPY,2025-06-30,SELL,bear_call_credit_spread,427.5,432.5,5.0,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 427.5,
+  ""long_strike"": 432.5,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T20:35:25.922481,SPY,2025-07-01,BUY,bull_put_credit_spread,440.0,435.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 440.0,
+  ""long_strike"": 435.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T20:39:44.090099,SPY,2025-07-02,BUY,bull_put_credit_spread,635,630,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 635,
+  ""long_strike"": 630,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T20:44:06.961602,SPY,2025-07-03,BUY,bull_put_credit_spread,465,460,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 465,
+  ""long_strike"": 460,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T20:48:19.292877,SPY,2025-07-04,SELL,bear_call_credit_spread,645,640,5,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 645,
+  ""long_strike"": 640,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T20:52:13.758241,SPY,2025-07-07,SELL,bear_call_credit_spread,450.0,455.0,5.0,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 450.0,
+  ""long_strike"": 455.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T20:56:15.430624,SPY,2025-07-08,BUY,bull_put_credit_spread,440.0,435.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 440.0,
+  ""long_strike"": 435.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T21:00:16.429251,SPY,2025-07-09,BUY,bull_put_credit_spread,432,427,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 432,
+  ""long_strike"": 427,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T21:04:51.471941,SPY,2025-07-10,BUY,bull_put_credit_spread,600,595,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 600,
+  ""long_strike"": 595,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T21:09:17.840939,SPY,2025-07-11,BUY,bull_put_credit_spread,395,390,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 395,
+  ""long_strike"": 390,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-25T21:13:30.207046,SPY,2025-07-14,BUY,bull_put_credit_spread,445.0,440.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 445.0,
+  ""long_strike"": 440.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T21:17:16.464548,SPY,2025-07-15,BUY,bull_put_credit_spread,620.0,615.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 620.0,
+  ""long_strike"": 615.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T21:21:11.795011,SPY,2025-07-16,BUY,bull_put_credit_spread,435.0,440.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 435.0,
+  ""long_strike"": 440.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T21:24:51.706994,SPY,2025-07-17,BUY,bull_put_credit_spread,422.0,417.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 422.0,
+  ""long_strike"": 417.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T21:29:34.941706,SPY,2025-07-18,BUY,bull_put_credit_spread,430,425,5,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 80
+}"
+2025-11-25T21:33:29.302832,SPY,2025-07-21,BUY,bull_put_credit_spread,635,630,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 635,
+  ""long_strike"": 630,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-25T21:37:37.807113,SPY,2025-07-22,BUY,bull_put_credit_spread,430,425,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-25T21:41:34.628431,SPY,2025-07-23,BUY,bull_put_credit_spread,430.0,425.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T21:44:50.810412,SPY,2025-07-24,BUY,bull_put_credit_spread,427.0,422.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 427.0,
+  ""long_strike"": 422.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T21:48:53.110529,SPY,2025-07-25,BUY,bull_put_credit_spread,450,455,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 450,
+  ""long_strike"": 455,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T21:52:42.519273,SPY,2025-07-28,BUY,bull_put_credit_spread,675,670,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 675,
+  ""long_strike"": 670,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T21:56:13.389505,SPY,2025-07-29,BUY,bull_put_credit_spread,608.0,603.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 608.0,
+  ""long_strike"": 603.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T22:00:00.954505,SPY,2025-07-30,SELL,bear_call_credit_spread,430.0,435.0,5.0,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 435.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T22:04:15.443308,SPY,2025-07-31,BUY,bull_put_credit_spread,430.0,425.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T22:08:20.461194,SPY,2025-08-01,HOLD,none,,,,85,"{
+  ""direction"": ""HOLD"",
+  ""spread_type"": ""none"",
+  ""short_strike"": null,
+  ""long_strike"": null,
+  ""width"": null,
+  ""confidence"": 85
+}"
+2025-11-25T22:12:17.338775,SPY,2025-08-04,BUY,bull_put_credit_spread,440,435,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 440,
+  ""long_strike"": 435,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T22:16:09.771552,SPY,2025-08-05,BUY,bull_put_credit_spread,445,440,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 445,
+  ""long_strike"": 440,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T22:19:35.547659,SPY,2025-08-06,SELL,bear_call_credit_spread,675,680,5,75,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 675,
+  ""long_strike"": 680,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-25T22:23:47.176446,SPY,2025-08-07,BUY,bull_put_credit_spread,440,435,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 440,
+  ""long_strike"": 435,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T22:27:44.779958,SPY,2025-08-08,SELL,bear_call_credit_spread,422.5,427.5,5,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 422.5,
+  ""long_strike"": 427.5,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T22:31:44.555822,SPY,2025-08-11,BUY,bull_put_credit_spread,428.0,423.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 428.0,
+  ""long_strike"": 423.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T22:35:26.952416,SPY,2025-08-12,BUY,bull_put_credit_spread,438.0,433.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 438.0,
+  ""long_strike"": 433.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T22:39:08.575374,SPY,2025-08-13,BUY,bull_put_credit_spread,430,425,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T22:42:55.671632,SPY,2025-08-14,BUY,bull_put_credit_spread,445.0,440.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 445.0,
+  ""long_strike"": 440.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T22:46:41.600580,SPY,2025-08-15,BUY,bull_put_credit_spread,430.0,425.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T22:50:46.480598,SPY,2025-08-18,BUY,bull_put_credit_spread,433,438,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 433,
+  ""long_strike"": 438,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T22:54:42.049059,SPY,2025-08-19,HOLD,none,,,,85,"{
+  ""direction"": ""HOLD"",
+  ""spread_type"": ""none"",
+  ""short_strike"": null,
+  ""long_strike"": null,
+  ""width"": null,
+  ""confidence"": 85
+}"
+2025-11-25T22:58:11.182849,SPY,2025-08-20,BUY,bull_put_credit_spread,675,670,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 675,
+  ""long_strike"": 670,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-25T23:02:03.732542,SPY,2025-08-21,BUY,bull_put_credit_spread,475,470,5,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 475,
+  ""long_strike"": 470,
+  ""width"": 5,
+  ""confidence"": 80
+}"
+2025-11-25T23:06:27.745817,SPY,2025-08-22,BUY,bull_put_credit_spread,750,745,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 750,
+  ""long_strike"": 745,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T23:10:31.166608,SPY,2025-08-25,BUY,bull_put_credit_spread,430,425,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T23:14:33.041769,SPY,2025-08-26,BUY,bull_put_credit_spread,610.0,605.0,5.0,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 610.0,
+  ""long_strike"": 605.0,
+  ""width"": 5.0,
+  ""confidence"": 80
+}"
+2025-11-25T23:17:56.256420,SPY,2025-08-27,BUY,bull_put_credit_spread,625,620,5,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 625,
+  ""long_strike"": 620,
+  ""width"": 5,
+  ""confidence"": 80
+}"
+2025-11-25T23:21:31.992223,SPY,2025-08-28,BUY,bull_put_credit_spread,440,435,5,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 440,
+  ""long_strike"": 435,
+  ""width"": 5,
+  ""confidence"": 80
+}"
+2025-11-25T23:25:13.181621,SPY,2025-08-29,BUY,bull_put_credit_spread,420.0,425.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 420.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T23:29:00.210352,SPY,2025-09-01,BUY,bull_put_credit_spread,434.0,431.0,3.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 434.0,
+  ""long_strike"": 431.0,
+  ""width"": 3.0,
+  ""confidence"": 85
+}"
+2025-11-25T23:32:48.167732,SPY,2025-09-02,BUY,bull_put_credit_spread,425,420,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 425,
+  ""long_strike"": 420,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T23:36:37.346521,SPY,2025-09-03,BUY,bull_put_credit_spread,430,425,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T23:42:29.940086,SPY,2025-09-04,BUY,bull_put_credit_spread,400,405,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 400,
+  ""long_strike"": 405,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-25T23:46:24.198417,SPY,2025-09-05,BUY,bull_put_credit_spread,396.0,391.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 396.0,
+  ""long_strike"": 391.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-25T23:50:03.415053,SPY,2025-09-08,BUY,bull_put_credit_spread,425.0,420.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 425.0,
+  ""long_strike"": 420.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T23:53:49.099385,SPY,2025-09-09,BUY,bull_put_credit_spread,431.0,426.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 431.0,
+  ""long_strike"": 426.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-25T23:57:41.673694,SPY,2025-09-10,SELL,bear_call_credit_spread,430.0,435.0,5.0,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 435.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T00:01:20.216442,SPY,2025-09-11,BUY,bull_put_credit_spread,595,590,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 595,
+  ""long_strike"": 590,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T00:06:10.120461,SPY,2025-09-12,BUY,bull_put_credit_spread,460,455,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 460,
+  ""long_strike"": 455,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T00:10:18.359668,SPY,2025-09-15,BUY,bull_put_credit_spread,645,640,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 645,
+  ""long_strike"": 640,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-26T00:14:17.937190,SPY,2025-09-16,BUY,bull_put_credit_spread,442.0,437.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 442.0,
+  ""long_strike"": 437.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T00:17:46.237524,SPY,2025-09-17,BUY,bull_put_credit_spread,430,425,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T00:21:34.537249,SPY,2025-09-18,BUY,bull_put_credit_spread,430,425,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T00:25:11.159835,SPY,2025-09-19,SELL,bear_call_credit_spread,668.0,663.0,5.0,75,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 668.0,
+  ""long_strike"": 663.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-26T00:28:43.052637,SPY,2025-09-22,SELL,bear_call_credit_spread,405.0,410.0,5.0,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 405.0,
+  ""long_strike"": 410.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T00:32:52.875432,SPY,2025-09-23,BUY,bull_put_credit_spread,640,635,5,70,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 640,
+  ""long_strike"": 635,
+  ""width"": 5,
+  ""confidence"": 70
+}"
+2025-11-26T00:36:53.597317,SPY,2025-09-24,BUY,bull_put_credit_spread,430.0,425.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T00:40:49.756184,SPY,2025-09-25,HOLD,none,,,,85,"{
+  ""direction"": ""HOLD"",
+  ""spread_type"": ""none"",
+  ""short_strike"": null,
+  ""long_strike"": null,
+  ""width"": null,
+  ""confidence"": 85
+}"
+2025-11-26T00:44:49.893693,SPY,2025-09-26,BUY,bull_put_credit_spread,435.0,430.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 435.0,
+  ""long_strike"": 430.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T00:48:21.051588,SPY,2025-09-29,BUY,bull_put_credit_spread,660.0,655.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 660.0,
+  ""long_strike"": 655.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T00:52:19.227758,SPY,2025-09-30,BUY,bull_put_credit_spread,445,440,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 445,
+  ""long_strike"": 440,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-26T00:55:56.487955,SPY,2025-10-01,BUY,bull_put_credit_spread,665,660,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 665,
+  ""long_strike"": 660,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T00:59:41.513303,SPY,2025-10-02,BUY,bull_put_credit_spread,645,640,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 645,
+  ""long_strike"": 640,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:03:37.776075,SPY,2025-10-03,BUY,bull_put_credit_spread,675,670,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 675,
+  ""long_strike"": 670,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:08:27.260896,SPY,2025-10-06,BUY,bull_put_credit_spread,430.0,425.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T01:12:42.818681,SPY,2025-10-07,BUY,bull_put_credit_spread,675,670,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 675,
+  ""long_strike"": 670,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:16:27.154727,SPY,2025-10-08,BUY,bull_put_credit_spread,428.0,425.0,3.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 428.0,
+  ""long_strike"": 425.0,
+  ""width"": 3.0,
+  ""confidence"": 75
+}"
+2025-11-26T01:19:32.380150,SPY,2025-10-09,BUY,bull_put_credit_spread,430,425,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:23:29.653957,SPY,2025-10-10,BUY,bull_put_credit_spread,435.0,430.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 435.0,
+  ""long_strike"": 430.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T01:27:00.086459,SPY,2025-10-13,SELL,bear_call_credit_spread,610,615,5,85,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 610,
+  ""long_strike"": 615,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:30:48.312080,SPY,2025-10-14,BUY,bull_put_credit_spread,675,670,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 675,
+  ""long_strike"": 670,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:34:23.811833,SPY,2025-10-15,BUY,bull_put_credit_spread,428.0,423.0,5.0,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 428.0,
+  ""long_strike"": 423.0,
+  ""width"": 5.0,
+  ""confidence"": 80
+}"
+2025-11-26T01:38:26.791509,SPY,2025-10-16,BUY,bull_put_credit_spread,675,670,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 675,
+  ""long_strike"": 670,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:42:24.127482,SPY,2025-10-17,BUY,bull_put_credit_spread,430,425,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-26T01:46:09.239553,SPY,2025-10-20,BUY,bull_put_credit_spread,665,660,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 665,
+  ""long_strike"": 660,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:49:39.755870,SPY,2025-10-21,BUY,bull_put_credit_spread,426.0,421.0,5.0,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 426.0,
+  ""long_strike"": 421.0,
+  ""width"": 5.0,
+  ""confidence"": 80
+}"
+2025-11-26T01:53:26.982383,SPY,2025-10-22,BUY,bull_put_credit_spread,670,665,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 670,
+  ""long_strike"": 665,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T01:56:53.440799,SPY,2025-10-23,BUY,bull_put_credit_spread,430.0,425.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T02:00:27.010715,SPY,2025-10-24,BUY,bull_put_credit_spread,440,435,5,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 440,
+  ""long_strike"": 435,
+  ""width"": 5,
+  ""confidence"": 80
+}"
+2025-11-26T02:04:55.145259,SPY,2025-10-27,BUY,bull_put_credit_spread,445.0,440.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 445.0,
+  ""long_strike"": 440.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T02:09:11.792377,SPY,2025-10-28,BUY,bull_put_credit_spread,430.0,425.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 425.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T02:12:55.928789,SPY,2025-10-29,BUY,bull_put_credit_spread,665,660,5,80,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 665,
+  ""long_strike"": 660,
+  ""width"": 5,
+  ""confidence"": 80
+}"
+2025-11-26T02:17:00.793211,SPY,2025-10-30,BUY,bull_put_credit_spread,685,680,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 685,
+  ""long_strike"": 680,
+  ""width"": 5,
+  ""confidence"": 75
+}"
+2025-11-26T02:20:43.264454,SPY,2025-10-31,BUY,bull_put_credit_spread,675,670,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 675,
+  ""long_strike"": 670,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T02:24:31.190539,SPY,2025-11-03,BUY,bull_put_credit_spread,427.0,422.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 427.0,
+  ""long_strike"": 422.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T02:28:22.795176,SPY,2025-11-04,BUY,bull_put_credit_spread,435.0,430.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 435.0,
+  ""long_strike"": 430.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T02:31:51.107395,SPY,2025-11-05,BUY,bull_put_credit_spread,675.0,670.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 675.0,
+  ""long_strike"": 670.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-26T02:35:41.852781,SPY,2025-11-06,BUY,bull_put_credit_spread,428.0,423.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 428.0,
+  ""long_strike"": 423.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T02:39:41.740025,SPY,2025-11-07,BUY,bull_put_credit_spread,445,440,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 445,
+  ""long_strike"": 440,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T02:43:43.782015,SPY,2025-11-10,BUY,bull_put_credit_spread,680,675,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 680,
+  ""long_strike"": 675,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T02:47:55.026541,SPY,2025-11-11,BUY,bull_put_credit_spread,670,665,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 670,
+  ""long_strike"": 665,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T02:52:17.356787,SPY,2025-11-12,BUY,bull_put_credit_spread,430,425,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 430,
+  ""long_strike"": 425,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T02:56:14.357671,SPY,2025-11-13,BUY,bull_put_credit_spread,443.0,438.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 443.0,
+  ""long_strike"": 438.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T02:59:37.849307,SPY,2025-11-14,SELL,bear_call_credit_spread,440,445,5,80,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 440,
+  ""long_strike"": 445,
+  ""width"": 5,
+  ""confidence"": 80
+}"
+2025-11-26T03:03:24.876865,SPY,2025-11-17,SELL,bear_call_credit_spread,430.0,435.0,5.0,75,"{
+  ""direction"": ""SELL"",
+  ""spread_type"": ""bear_call_credit_spread"",
+  ""short_strike"": 430.0,
+  ""long_strike"": 435.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-26T03:07:27.938452,SPY,2025-11-18,BUY,bull_put_credit_spread,670,665,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 670,
+  ""long_strike"": 665,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T03:11:50.694153,SPY,2025-11-19,BUY,bull_put_credit_spread,665,660,5,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 665,
+  ""long_strike"": 660,
+  ""width"": 5,
+  ""confidence"": 85
+}"
+2025-11-26T03:15:19.186559,SPY,2025-11-20,BUY,bull_put_credit_spread,435.0,430.0,5.0,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 435.0,
+  ""long_strike"": 430.0,
+  ""width"": 5.0,
+  ""confidence"": 75
+}"
+2025-11-26T03:19:13.373596,SPY,2025-11-21,BUY,bull_put_credit_spread,428.0,423.0,5.0,85,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 428.0,
+  ""long_strike"": 423.0,
+  ""width"": 5.0,
+  ""confidence"": 85
+}"
+2025-11-26T03:22:55.913420,SPY,2025-11-24,BUY,bull_put_credit_spread,670,665,5,75,"{
+  ""direction"": ""BUY"",
+  ""spread_type"": ""bull_put_credit_spread"",
+  ""short_strike"": 670,
+  ""long_strike"": 665,
+  ""width"": 5,
+  ""confidence"": 75
+}"
