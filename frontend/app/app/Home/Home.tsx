@@ -7,6 +7,8 @@ import { ThemeToggle } from "../components/layout/ThemeToggle";
 import { HowItWorks } from "../components/homepage/HowItWorks";
 import { Features } from "../components/homepage/Features";
 import { Footer } from "../components/homepage/Footer";
+import { Performance } from "../components/homepage/Performance";
+import { CTA } from "../components/homepage/CTA";
 import { WIPplaceholder } from "../components/homepage/WIPplaceholder";
 import { Technologies } from "../components/homepage/Technologies";
 import Navbar from "../components/layout/Navbar";
@@ -62,10 +64,12 @@ export function Home() {
           display: showTechnologies ? 'none' : 'block'
         }}
       >
-        <WIPplaceholder />
+        {/*<WIPplaceholder />*/}
         <Hero />
         <HowItWorks />
         <Features />
+        <Performance />
+        <CTA />
       </div>
 
       {/* Technologies Section with Fade Transition */}
