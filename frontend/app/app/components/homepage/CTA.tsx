@@ -2,7 +2,7 @@ import react from "react";
 
 export function CTA() {
   return (
-    <section className="bg-background px-4 md:px-8 py-16 md:py-24">
+    <section className="bg-background-secondary px-4 md:px-8 py-16 md:py-24 border-t border-border">
       <div className="max-w-4xl mx-auto text-center bg-background-secondary/30 rounded-2xl border border-border p-8 md:p-12">
         <h2 className="text-text text-2xl md:text-3xl font-extrabold mb-4">
           Ready to Automate Your Options Trading?
