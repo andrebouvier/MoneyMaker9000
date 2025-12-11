@@ -54,12 +54,11 @@ export function Home() {
   return (
     <main className="box-border">
       <Navbar />
-      
+
       {/* Homepage Content with Fade Transition */}
-      <div 
-        className={`transition-opacity duration-600 ease-in-out ${
-          showTechnologies || isTransitioning ? 'opacity-0' : 'opacity-100'
-        }`}
+      <div
+        className={`transition-opacity duration-600 ease-in-out ${showTechnologies || isTransitioning ? 'opacity-0' : 'opacity-100'
+          }`}
         style={{
           display: showTechnologies ? 'none' : 'block'
         }}
@@ -79,17 +78,16 @@ export function Home() {
       </div>
 
       {/* Technologies Section with Fade Transition */}
-      <div 
-        className={`transition-opacity duration-600 ease-in-out ${
-          showTechnologies && !isTransitioning ? 'opacity-100' : 'opacity-0'
-        }`}
+      <div
+        className={`transition-opacity duration-600 ease-in-out ${showTechnologies && !isTransitioning ? 'opacity-100' : 'opacity-0'
+          }`}
         style={{
           display: showTechnologies ? 'block' : 'none'
         }}
       >
         <Technologies />
       </div>
-      
+
       <Footer />
 
     </main>
