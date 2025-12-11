@@ -62,15 +62,12 @@ const PortfolioValueBox: React.FC = () => {
     <div className='bg-surface rounded-xl shadow-md p-4 text-center mb-4'>
       <h1 className='text-xl font-bold text-text flex justify-center items-center h-6'>
         <span className="group-hover:hidden">PV</span>
-        <span className="hidden group-hover:block">Total Portfolio Value</span>
+        <span className="hidden group-hover:block">Portfolio Value</span>
       </h1>
       <div className='hidden group-hover:block'>
         <h2 className='${getFontSizeClasses(netLiquidation)} font-extrabold text-primary'>
           ${netLiquidation}
         </h2>
-        <p className='mt-2 text-text-secondary font-semibold flex justify-center items-center'>
-          +5.2% since last month (TEST VALUES)
-        </p>
       </div>
     </div>
   )
