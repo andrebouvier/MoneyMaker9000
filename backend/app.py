@@ -40,11 +40,13 @@ migrate = Migrate(app, db)
 # Imports made after db is initialized
 from models.user import User
 from routes import trading_routes, auth_routes
+from routes import conversation_routes
 from services import ib_service
 
 # Register blueprints
 app.register_blueprint(trading_routes.bp)
 app.register_blueprint(auth_routes.bp)
+app.register_blueprint(conversation_routes.bp)
 
 
 # Test endpoint for database

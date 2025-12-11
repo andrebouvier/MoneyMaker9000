@@ -156,6 +156,11 @@ export default function Navbar() {
         {/* Right side - Get Started button and mobile menu */}
         <div className="flex items-center space-x-3">
           <ThemeToggle />
+          <button type="button" className="text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:ring-primary/30 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none transition-all duration-300 ease-in-out">
+            <Link to="/conversation">
+              Conversation
+            </Link>
+          </button>
           <button onClick={handleSignIn} type="button" className="cursor-pointer text-white bg-primary hover:bg-primary-dark focus:ring-4 focus:ring-primary/30 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 focus:outline-none transition-all duration-300 ease-in-out">
             Login
           </button>

@@ -29,9 +29,9 @@ def startup_ib_connection():
 
     future = asyncio.run_coroutine_threadsafe(
         ib.connectAsync(
-            host=os.getenv("IB_HOST"),
-            port=int(os.getenv("IB_PORT")),
-            clientId=int(os.getenv("IB_CLIENT_ID")),
+            host="127.0.0.1",
+            port="7497",
+            clientId="3",
             timeout=10,
         ),
         background_loop,

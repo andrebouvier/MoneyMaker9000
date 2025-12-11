@@ -12,13 +12,14 @@ export function Technologies() {
           </h1>
           <p className="text-lg text-text-secondary max-w-3xl mx-auto">
             This project, built by Andre and Aaron, leverages modern web technologies and machine learning libraries 
-            to create a comprehensive trading platform with real-time data processing and AI-driven insights.
+            to create an automated trading platform referencing real market data and AI-driven insights. 
+            The platform uses real market data from Interactive Brokers API and has been backtested using real market data from CBOE DataShop.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Frontend Technologies */}
-          <div className="bg-surface rounded-xl p-6 shadow-lg border border-border">
+          <div className="bg-background-secondary/40 rounded-xl p-6 shadow-lg border border-border">
             <h2 className="text-2xl font-bold text-text mb-4 flex items-center">
               <span className="text-primary mr-3">⚛️</span>
               Frontend
@@ -48,7 +49,7 @@ export function Technologies() {
           </div>
 
           {/* Backend Technologies */}
-          <div className="bg-surface rounded-xl p-6 shadow-lg border border-border">
+          <div className="bg-background-secondary/40 rounded-xl p-6 shadow-lg border border-border">
             <h2 className="text-2xl font-bold text-text mb-4 flex items-center">
               <span className="text-primary mr-3">🐍</span>
               Backend
@@ -74,7 +75,7 @@ export function Technologies() {
           </div>
 
           {/* Machine Learning & AI */}
-          <div className="bg-surface rounded-xl p-6 shadow-lg border border-border">
+          <div className="bg-background-secondary/40 rounded-xl p-6 shadow-lg border border-border">
             <h2 className="text-2xl font-bold text-text mb-4 flex items-center">
               <span className="text-primary mr-3">🤖</span>
               AI & ML
@@ -104,12 +105,20 @@ export function Technologies() {
           </div>
 
           {/* Data & Analytics */}
-          <div className="bg-surface rounded-xl p-6 shadow-lg border border-border">
+          <div className="bg-background-secondary/40 rounded-xl p-6 shadow-lg border border-border">
             <h2 className="text-2xl font-bold text-text mb-4 flex items-center">
               <span className="text-primary mr-3">📊</span>
               Data & Analytics
             </h2>
             <ul className="space-y-3">
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-text">Real Market Data from CBOE DataShop</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-text">Python Backtesting Scripts</span>
+              </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
                 <span className="text-text">Real-time Market Data</span>
@@ -129,39 +138,39 @@ export function Technologies() {
             </ul>
           </div>
 
-          {/* Development Tools */}
-          <div className="bg-surface rounded-xl p-6 shadow-lg border border-border">
+          {/* Trading Libraries & Tools */}
+          <div className="bg-background-secondary/40 rounded-xl p-6 shadow-lg border border-border">
             <h2 className="text-2xl font-bold text-text mb-4 flex items-center">
-              <span className="text-primary mr-3">🛠️</span>
-              Development
+              <span className="text-primary mr-3">📈</span>
+              Trading Libraries & Tools
             </h2>
             <ul className="space-y-3">
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                <span className="text-text">Git Version Control</span>
+                <span className="text-text">yfinance for Market Data</span>
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                <span className="text-text">Jupyter Notebooks</span>
+                <span className="text-text">Stockstats for Technical Indicators</span>
               </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                <span className="text-text">VS Code Development</span>
+                <span className="text-text">LangGraph for Agent Workflows</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                <span className="text-text">Finnhub for Financial Data</span>
               </li>
             </ul>
           </div>
 
           {/* Architecture */}
-          <div className="bg-surface rounded-xl p-6 shadow-lg border border-border">
+          <div className="bg-background-secondary/40 rounded-xl p-6 shadow-lg border border-border">
             <h2 className="text-2xl font-bold text-text mb-4 flex items-center">
               <span className="text-primary mr-3">🏗️</span>
               Architecture
             </h2>
             <ul className="space-y-3">
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                <span className="text-text">Microservices Architecture</span>
-              </li>
               <li className="flex items-center">
                 <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
                 <span className="text-text">RESTful API Design</span>
