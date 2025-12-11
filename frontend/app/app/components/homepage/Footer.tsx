@@ -10,9 +10,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mb-8">
           {/* Company/Brand Column */}
           <div className="col-span-1">
-            <h3 className="text-text font-bold text-xl mb-4">[Company Name]</h3>
+            <h3 className="text-text font-bold text-xl mb-4">MoneyMaker9000</h3>
             <p className="text-text opacity-80 dark:opacity-100 text-sm mb-4 leading-relaxed">
-              [Brief company description - e.g., "Automated options trading solutions for modern investors"]
+              Computer Engineering student project to enable an automated stock option trading bot.
             </p>
             {/* Social Media Links - Placeholders */}
             <div className="flex gap-4 mt-4">
@@ -80,18 +80,9 @@ export function Footer() {
               <li className="text-text opacity-80 dark:opacity-100">
                 <span className="block mb-1">Email:</span>
                 <a href="mailto:placeholder@example.com" className="text-text hover:text-primary-dark transition-colors">
-                  [contact@example.com]
+                  andrebouvier@sfsu.edu
+                  acastellanos3@mail.sfsu.edu
                 </a>
-              </li>
-              <li className="text-text opacity-80 dark:opacity-100">
-                <span className="block mb-1">Support:</span>
-                <a href="mailto:support@example.com" className="text-text hover:text-primary-dark transition-colors">
-                  [support@example.com]
-                </a>
-              </li>
-              <li className="text-text opacity-80 dark:opacity-100 mt-4">
-                <span className="block mb-1">Address:</span>
-                <span className="text-text opacity-80 dark:opacity-100">[Company Address]</span>
               </li>
             </ul>
           </div>
@@ -99,38 +90,13 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 mt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            {/* Copyright */}
-            <div className="text-text opacity-70 dark:opacity-100 text-sm text-center md:text-left">
-              <p>© {currentYear} [Company Name]. All rights reserved.</p>
-            </div>
-
-            {/* Legal Links */}
-            <div className="flex flex-wrap gap-6 justify-center md:justify-end">
-              <a href="#privacy" className="text-text opacity-70 dark:opacity-100 hover:opacity-100 text-sm transition-all">
-                [Privacy Policy]
-              </a>
-              <a href="#terms" className="text-text opacity-70 dark:opacity-100 hover:opacity-100 text-sm transition-all">
-                [Terms of Service]
-              </a>
-              <a href="#cookies" className="text-text opacity-70 dark:opacity-100 hover:opacity-100 text-sm transition-all">
-                [Cookie Policy]
-              </a>
-              <a href="#disclaimer" className="text-text opacity-70 dark:opacity-100 hover:opacity-100 text-sm transition-all">
-                [Disclaimer]
-              </a>
-            </div>
-          </div>
-
           {/* Developer Credit */}
-          <div className="mt-6 pt-6 border-t border-border/50">
-            <p className="text-text opacity-65 dark:opacity-100 text-xs text-center">
-              Developed by [Developer 1 Name] & [Developer 2 Name]
-            </p>
-            <p className="text-text opacity-55 dark:opacity-100 text-xs text-center mt-1">
-              [Project Affiliation/Course - e.g., ENGR 696 Project, SFSU]
-            </p>
-          </div>
+          <p className="text-text opacity-65 dark:opacity-100 text-xs text-center">
+            Developed by Andre Bouvier & Aaron Castellanos
+          </p>
+          <p className="text-text opacity-55 dark:opacity-100 text-xs text-center mt-1">
+            Created for Fall 2025 SFSU Capstone Project
+          </p>
         </div>
       </div>
     </footer>
