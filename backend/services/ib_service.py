@@ -29,9 +29,9 @@ def startup_ib_connection():
 
     async def connect_and_subscribe():
         await ib.connectAsync(
-            host=os.getenv("127.0.0.1"),
-            port=int(os.getenv("7497")),
-            clientId=int(os.getenv("3")),
+            host=os.getenv("IB_HOST", "127.0.0.1"),
+            port=int(os.getenv("IB_PORT", "4002")),
+            clientId=int(os.getenv("IB_CLIENT_ID", "3")),
             timeout=10,
         )
         ib.reqAccountUpdates(True)
