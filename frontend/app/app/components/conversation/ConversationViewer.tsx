@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 
 interface ConversationMessage {
   type: 'human' | 'ai' | 'tool';
@@ -175,12 +175,7 @@ export function ConversationViewer() {
     }
   }, [conversationText]);
 
-  const handlePaste = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setConversationText(e.target.value);
-    setError(null);
-  };
-
-  const handleLoadFromServer = async () => {
+  const handleLoadFromServer = useCallback(async () => {
     setIsLoadingFile(true);
     setError(null);
 
@@ -202,12 +197,12 @@ export function ConversationViewer() {
     } finally {
       setIsLoadingFile(false);
     }
-  };
+  }, []);
 
-  const handleClear = () => {
-    setConversationText('');
-    setError(null);
-  };
+  // Load conversation from server on component mount
+  useEffect(() => {
+    handleLoadFromServer();
+  }, [handleLoadFromServer]);
 
   return (
     <div className="min-h-screen bg-background pt-20 pb-8">
@@ -215,43 +210,30 @@ export function ConversationViewer() {
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-text mb-4">Agentic Conversation Viewer</h1>
           <p className="text-text-secondary">
-            Paste the conversation output from your forward propagate to visualize the agentic conversation flow.
+            View the stored conversation from your forward propagate to visualize the agentic conversation flow.
           </p>
         </div>
 
-        {/* Input Section */}
-        <div className="mb-6 bg-surface rounded-lg p-4 border border-border">
-          <div className="flex justify-between items-center mb-2">
-            <label htmlFor="conversation-input" className="text-text font-medium">
-              Conversation Output
-            </label>
-            <div className="flex items-center gap-3">
-              <button
-                onClick={handleLoadFromServer}
-                disabled={isLoadingFile}
-                className="text-sm text-text-secondary hover:text-text transition-colors disabled:opacity-60"
-              >
-                {isLoadingFile ? 'Loading...' : 'Load from backend file'}
-              </button>
-              <button
-                onClick={handleClear}
-                className="text-sm text-text-secondary hover:text-text transition-colors"
-              >
-                Clear
-              </button>
-            </div>
+        {/* Analysis Header */}
+        {messages.length > 0 && (
+          <div className="mb-6 bg-surface rounded-lg p-4 border border-border">
+            <p className="text-lg text-text font-medium">
+              This is an analysis from 10-21
+            </p>
           </div>
-          <textarea
-            id="conversation-input"
-            value={conversationText}
-            onChange={handlePaste}
-            placeholder="Paste the conversation output here..."
-            className="w-full h-48 p-3 bg-background border border-border rounded-md text-text font-mono text-sm resize-y focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-          {error && (
-            <p className="mt-2 text-sm text-red-500">{error}</p>
-          )}
-        </div>
+        )}
+
+        {error && (
+          <div className="mb-6 bg-red-500/10 rounded-lg p-4 border border-red-500/30">
+            <p className="text-sm text-red-500">{error}</p>
+          </div>
+        )}
+
+        {isLoadingFile && (
+          <div className="mb-6 text-center py-8">
+            <p className="text-text-secondary">Loading conversation...</p>
+          </div>
+        )}
 
         {/* Conversation Display */}
         {messages.length > 0 && (
