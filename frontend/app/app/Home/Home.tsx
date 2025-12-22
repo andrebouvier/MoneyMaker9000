@@ -68,12 +68,13 @@ export function Home() {
         <HowItWorks />
         {/* <Features /> */}
         <Performance />
-        {/* <section id="FAQ" className="bg-background px-4 md:px-8 py-16 md:py-24 border-t border-border"> */}
-        {/*   <div className="max-w-4xl mx-auto"> */}
-        {/*     <h2 className="text-text text-3xl md:text-4xl font-extrabold text-center mb-10">Frequently Asked Questions</h2> */}
-        {/*     <p className="text-text text-center opacity-80 dark:opacity-100">[FAQ content placeholder - add questions and answers here]</p> */}
-        {/*   </div> */}
-        {/* </section> */}
+        {/* <section id="FAQ" className="bg-background px-4 md:px-8 py-16 md:py-24 border-t border-border">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-text text-3xl md:text-4xl font-extrabold text-center mb-10">Frequently Asked Questions</h2>
+            <p className="text-text text-center opacity-80 dark:opacity-100">[FAQ content placeholder - add questions and answers here]</p>
+          </div>
+        </section> */}
+        {/* <CTA /> */}
       </div>
 
       {/* Technologies Section with Fade Transition */}
