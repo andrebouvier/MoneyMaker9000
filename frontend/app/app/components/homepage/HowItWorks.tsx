@@ -47,6 +47,23 @@ export function HowItWorks() {
                         </p>
                     </div>
                 </div>
+
+                {/* Agent Interaction Diagram */}
+                <div className="mt-16 w-full max-w-6xl">
+                    <h3 className="text-text text-center text-2xl md:text-3xl font-bold mb-8">
+                        Agent Interaction Flow
+                    </h3>
+                    <p className="text-text-secondary text-center mb-8 max-w-3xl mx-auto">
+                        Our Researcher Team processes data from multiple sources to generate comprehensive trading insights.
+                    </p>
+                    <div className="bg-surface rounded-2xl p-6 md:p-10 shadow-lg border border-border/20 flex justify-center">
+                        <img 
+                            src="/diagramfinal.png" 
+                            alt="Agent Interaction Flow Diagram showing data sources, researcher team, and trader" 
+                            className="h-auto max-w-4xl w-full object-contain"
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     );
