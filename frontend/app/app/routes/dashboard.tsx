@@ -14,14 +14,16 @@ const NewDashboard: React.FC = () => {
       {/* Navbar */}
       <Navbar />
       {/* Left Sidebar */}
-      <div className='group fixed left-0 h-[calc(100vh-90px)] w-20 
+      <div className='group fixed left-0 h-[calc(100vh-106px)] w-20 
         hover:w-64 bg-background-secondary transition-all duration-300 
         ease-in-out z-10 shadow-lg rounded-xl'
         style={{ top: '90px' }}
       >
         <div className='flex flex-col h-full justify-between'>
           <div className='p-4 space-y-4'>
-            <WatchlistBox />
+            <PortfolioValue availableBalance={0} />
+            <AvailableBalanceBox />
+            <ActivePositionBox />
             <TradingBotBox />
           </div>
         </div>
@@ -37,21 +39,6 @@ const NewDashboard: React.FC = () => {
           {/* Past Trades Section */}
           <PastTradesBox />
         </main>
-      </div>
-
-      {/* Right Sidebar */}
-      <div className='group fixed right-0 h-[calc(100vh-90px)] w-20 
-        hover:w-64 bg-background-secondary transition-all duration-300 
-        ease-in-out z-10 shadow-lg rounded-xl'
-        style={{ top: '90px' }}
-      >
-        <div className='flex flex-col h-[calc(100vh-10rem)] justify-between'>
-          <div className='p-2 space-y-2'>
-            <PortfolioValue availableBalance={0} />
-            <AvailableBalanceBox />
-            <ActivePositionBox />
-          </div>
-        </div>
       </div>
     </div>
   );

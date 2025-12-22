@@ -3,6 +3,7 @@ import services.ib_service as ib_service
 import csv
 import os
 from pathlib import Path
+import services.strategy_log_service as strategy_log_service
 
 from ib_async import PortfolioItem, Stock
 
@@ -61,6 +62,18 @@ def get_historic_data(symbol):
     try:
         data = ib_service.get_historic_market_data(symbol)
         return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# Get latest strategy log
+@bp.route("/strategy-log", methods=["GET"])
+def get_strategy_log():
+    try:
+        log_data = strategy_log_service.get_latest_strategy_log()
+        if log_data:
+            return jsonify(log_data)
+        return jsonify({"message": "No strategy log found"}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

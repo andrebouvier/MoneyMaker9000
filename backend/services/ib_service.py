@@ -27,13 +27,17 @@ def startup_ib_connection():
     if ib.isConnected():
         return
 
-    future = asyncio.run_coroutine_threadsafe(
-        ib.connectAsync(
-            host="127.0.0.1",
-            port="7497",
-            clientId="3",
+    async def connect_and_subscribe():
+        await ib.connectAsync(
+            host=os.getenv("127.0.0.1"),
+            port=int(os.getenv("7497")),
+            clientId=int(os.getenv("3")),
             timeout=10,
-        ),
+        )
+        ib.reqAccountUpdates(True)
+
+    future = asyncio.run_coroutine_threadsafe(
+        connect_and_subscribe(),
         background_loop,
     )
 
@@ -68,7 +72,7 @@ def get_account_summary():
 
 # Helper function
 async def _get_portfolio_async():
-    return await ib.portfolioAsync()
+    return ib.portfolio
 
 
 def get_portfolio():
