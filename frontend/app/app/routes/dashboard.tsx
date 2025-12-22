@@ -6,7 +6,7 @@ import PortfolioValue from '../components/dashboard/PortfolioValue';
 import AvailableBalanceBox from '../components/dashboard/AvailableBalanceBox';
 import ActivePositionBox from '../components/dashboard/ActivePositionsBox';
 import Chart from '../components/dashboard/Chart';
-import StrategyLogBox from '~/components/dashboard/StrategyLogBox';
+import PastTradesBox from '../components/dashboard/PastTradesBox';
 
 const NewDashboard: React.FC = () => {
   return (
@@ -30,14 +30,14 @@ const NewDashboard: React.FC = () => {
       </div>
 
       {/* Main Content */}
-      <div className='flex-1 flex flex-col ml-20 main-content-container'>
+      <div className='flex-1 flex flex-col ml-20 mr-20 main-content-container'>
         <main className='flex-1 p-4 overflow-y-auto'>
-          <div className='w-full h-full bg-background-secondary rounded-xl shadow-md'>
+          <div className='w-full h-96 bg-background-secondary rounded-xl shadow-md mb-4 p-4'>
             {/* Chart */}
             <Chart />
           </div>
-          {/* Strategy Log Box */}
-          <StrategyLogBox />
+          {/* Past Trades Section */}
+          <PastTradesBox />
         </main>
       </div>
     </div>

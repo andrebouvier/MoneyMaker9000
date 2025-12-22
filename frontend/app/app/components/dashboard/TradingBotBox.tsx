@@ -2,7 +2,7 @@ import React from 'react';
 
 const TradingBotBox: React.FC = () => {
   const handleCreateBot = () => {
-    alert('Creating a new trading bot');
+    alert('This function has been temporarily disabled');
   };
 
   return (

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
 
   return (
     <footer id="ContactUs" className="bg-background border-t border-border">
@@ -10,32 +11,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mb-8">
           {/* Company/Brand Column */}
           <div className="col-span-1">
-            <h3 className="text-text font-bold text-xl mb-4">MoneyMaker9000</h3>
+            <h3 className="text-text font-bold text-xl mb-4">MoneyMaker 9000</h3>
             <p className="text-text opacity-80 dark:opacity-100 text-sm mb-4 leading-relaxed">
-              Computer Engineering student project to enable an automated stock option trading bot.
+              Automated options trading webapp for inactive traders.
             </p>
-            {/* Social Media Links - Placeholders */}
+            {/* Social Media Links */}
             <div className="flex gap-4 mt-4">
               <a
-                href="#"
-                className="text-text opacity-70 dark:opacity-100 hover:opacity-100 transition-all"
-                aria-label="Twitter"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
-              </a>
-              <a
-                href="#"
-                className="text-text opacity-70 dark:opacity-100 hover:opacity-100 transition-all"
-                aria-label="LinkedIn"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
-                </svg>
-              </a>
-              <a
-                href="#"
+                href="https://github.com/andrebouvier/MoneyMaker9000"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-text opacity-70 dark:opacity-100 hover:opacity-100 transition-all"
                 aria-label="GitHub"
               >
@@ -51,23 +36,18 @@ export function Footer() {
             <h3 className="text-text font-semibold text-base mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-text opacity-80 dark:opacity-100 hover:opacity-100 text-sm transition-all">
-                  [Features Link]
+                <a href="#Features" className="text-text opacity-80 dark:opacity-100 hover:opacity-100 text-sm transition-all">
+                  Features
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-text opacity-80 dark:opacity-100 hover:opacity-100 text-sm transition-all">
-                  [About Link]
+                <a href="#About" className="text-text opacity-80 dark:opacity-100 hover:opacity-100 text-sm transition-all">
+                  About
                 </a>
               </li>
               <li>
-                <a href="#documentation" className="text-text opacity-80 dark:opacity-100 hover:opacity-100 text-sm transition-all">
-                  [Documentation Link]
-                </a>
-              </li>
-              <li>
-                <a href="#support" className="text-text opacity-80 dark:opacity-100 hover:opacity-100 text-sm transition-all">
-                  [Support Link]
+                <a href="https://github.com/andrebouvier/MoneyMaker9000/blob/main/README.md" target="_blank" rel="noopener noreferrer" className="text-text opacity-80 dark:opacity-100 hover:opacity-100 text-sm transition-all">
+                  Documentation
                 </a>
               </li>
             </ul>
@@ -80,8 +60,15 @@ export function Footer() {
               <li className="text-text opacity-80 dark:opacity-100">
                 <span className="block mb-1">Email:</span>
                 <a href="mailto:placeholder@example.com" className="text-text hover:text-primary-dark transition-colors">
-                  andrebouvier@sfsu.edu
-                  acastellanos3@mail.sfsu.edu
+                  [abouvier@sfsu.edu]
+                  [acastellanos3@sfsu.edu]
+                </a>
+              </li>
+              <li className="text-text opacity-80 dark:opacity-100">
+                <span className="block mb-1">Support:</span>
+                <a href="mailto:support@example.com" className="text-text hover:text-primary-dark transition-colors">
+                  [abouvier@sfsu.edu]
+                  [acastellanos3@sfsu.edu]
                 </a>
               </li>
             </ul>
@@ -90,15 +77,71 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 mt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            {/* Copyright */}
+            <div className="text-text opacity-70 dark:opacity-100 text-sm text-center md:text-left">
+              <p>© {currentYear} MoneyMaker 9000. All rights reserved.</p>
+            </div>
+
+            {/* Legal Links */}
+            <div className="flex flex-wrap gap-6 justify-center md:justify-end">
+              <button
+                onClick={() => setShowDisclaimer(true)}
+                className="text-text opacity-70 dark:opacity-100 hover:opacity-100 text-sm transition-all cursor-pointer"
+              >
+                Disclaimer
+              </button>
+            </div>
+          </div>
+
           {/* Developer Credit */}
-          <p className="text-text opacity-65 dark:opacity-100 text-xs text-center">
-            Developed by Andre Bouvier & Aaron Castellanos
-          </p>
-          <p className="text-text opacity-55 dark:opacity-100 text-xs text-center mt-1">
-            Created for Fall 2025 SFSU Capstone Project
-          </p>
+          <div className="mt-6 pt-6 border-t border-border/50">
+            <p className="text-text opacity-65 dark:opacity-100 text-xs text-center">
+              Developed by Andre Bouvier & Aaron Castellellanos
+            </p>
+            <p className="text-text opacity-55 dark:opacity-100 text-xs text-center mt-1">
+              ENGR696/697 SFSU
+            </p>
+          </div>
         </div>
       </div>
+
+      {/* Disclaimer Modal */}
+      {showDisclaimer && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
+          onClick={() => setShowDisclaimer(false)}
+        >
+          <div
+            className="bg-background border border-border rounded-lg shadow-xl max-w-md w-full p-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-text text-xl font-bold">Disclaimer</h3>
+              <button
+                onClick={() => setShowDisclaimer(false)}
+                className="text-text opacity-70 hover:opacity-100 transition-opacity"
+                aria-label="Close"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <p className="text-text opacity-90 dark:opacity-100">
+              This application is not to be used as financial advice and is a test.
+            </p>
+            <div className="mt-6 flex justify-end">
+              <button
+                onClick={() => setShowDisclaimer(false)}
+                className="bg-primary-dark text-text-secondary px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+              >
+                I Understand
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   );
 }
