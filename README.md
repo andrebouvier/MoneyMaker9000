@@ -66,7 +66,6 @@ This project leverages a modern full-stack architecture to deliver a robust algo
 ### Key Features & Accomplishments
 
 *   **Automated Trading Engine:** A fully autonomous system capable of executing complex **Credit Spread** strategies based on real-time market conditions.
-*   **ML-Driven Predictions:** Uses a custom trained LSTM model to predict market direction and volatility, optimizing entry and exit points.
 *   **Real-Time Data Streaming:** Live integration with Interactive Brokers to stream quotes and update portfolio status in real-time.
 *   **Comprehensive Backtesting:** A dedicated module (`TradingAgents`) for validating strategies against historical data (`Historical-Data/`) before live deployment.
 *   **Modern Web Dashboard:** A user-friendly interface that allows users to monitor active trades, view historical performance, and control bot parameters with ease.
